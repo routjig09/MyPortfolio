@@ -1,0 +1,56 @@
+{
+  "build": "py312haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.12,<3.13.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\hp\\anaconda3\\pkgs\\shellingham-1.5.0-py312haa95532_0",
+  "files": [
+    "Lib/site-packages/shellingham-1.5.0.dist-info/INSTALLER",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/LICENSE",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/METADATA",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/RECORD",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/REQUESTED",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/WHEEL",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/direct_url.json",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/top_level.txt",
+    "Lib/site-packages/shellingham-1.5.0.dist-info/zip-safe",
+    "Lib/site-packages/shellingham/__init__.py",
+    "Lib/site-packages/shellingham/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/shellingham/__pycache__/_core.cpython-312.pyc",
+    "Lib/site-packages/shellingham/__pycache__/nt.cpython-312.pyc",
+    "Lib/site-packages/shellingham/_core.py",
+    "Lib/site-packages/shellingham/nt.py",
+    "Lib/site-packages/shellingham/posix/__init__.py",
+    "Lib/site-packages/shellingham/posix/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/shellingham/posix/__pycache__/_core.cpython-312.pyc",
+    "Lib/site-packages/shellingham/posix/__pycache__/proc.cpython-312.pyc",
+    "Lib/site-packages/shellingham/posix/__pycache__/ps.cpython-312.pyc",
+    "Lib/site-packages/shellingham/posix/_core.py",
+    "Lib/site-packages/shellingham/posix/proc.py",
+    "Lib/site-packages/shellingham/posix/ps.py",
+    ".nonadmin"
+  ],
+  "fn": "shellingham-1.5.0-py312haa95532_0.conda",
+  "license": "ISC",
+  "link": {
+    "source": "C:\\Users\\hp\\anaconda3\\pkgs\\shellingham-1.5.0-py312haa95532_0",
+    "type": 1
+  },
+  "md5": "80d0b97f0a118d58ffdcfbba06df0a53",
+  "name": "shellingham",
+  "package_tarball_full_path": "C:\\Users\\hp\\anaconda3\\pkgs\\shellingham-1.5.0-py312haa95532_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "4e508a9277ddc485fabdb7536f9d7e8bea6f01b7840cd77b4c4f923afbd5cbf2",
+  "size": 21300,
+  "subdir": "win-64",
+  "timestamp": 1699475587000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/shellingham-1.5.0-py312haa95532_0.conda",
+  "version": "1.5.0"
+}

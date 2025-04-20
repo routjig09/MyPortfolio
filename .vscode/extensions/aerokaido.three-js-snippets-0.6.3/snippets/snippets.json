@@ -1,0 +1,276 @@
+{
+	"Init Function": {
+		"prefix": "tinit",
+		"body": [
+			"import * as THREE from 'three';",
+			"function init() {",
+			"\t// create a scene, that will hold all our elements such as objects, cameras and lights.",
+			"\tconst scene = new THREE.Scene();",
+			"\t// create a camera, which defines where we're looking at",
+			"\tconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);",
+			"\t// tell the camera where to look",
+			"\tcamera.position.set(0, 0, 10);",
+			"\t// create a render and set the size",
+			"\tconst sizes = {",
+			"\t\twidth: window.innerWidth,",
+			"\t\theight: window.innerHeight,",
+			"\t}",
+			"\tconst renderer = new THREE.WebGLRenderer();",
+			"\trenderer.setSize(sizes.width, sizes.height);",
+			"\t// add the output of the render function to the HTML",
+			"\tdocument.body.appendChild(renderer.domElement);",
+			"\t// function for re-rendering/animating the scene",
+			"\tfunction tick() {",
+			"\t\trequestAnimationFrame(tick);",
+			"\t\trenderer.render(scene, camera);",
+			"\t}",
+			"\ttick();",
+			"}",
+			"init();"
+		],
+		"description": "basic init function, with a scene, camera, light, enderer, and render function for THREE.js"
+	},
+
+	"GUI Init Function" : {
+		"prefix": "tinitgui",
+		"body": [
+			"import * as THREE from 'three';",
+			"import * as dat from 'dat.gui';",
+			"function init() {",
+			"\t// create a scene, that will hold all our elements such as objects, cameras and lights.",
+			"\tconst scene = new THREE.Scene();",
+			"\n\t// create a camera, which defines where we're looking at",
+			"\tconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);",
+			"\t// tell the camera where to look",
+			"\tcamera.position.set(0, 0, 10);",
+			"\tconst sizes = {",
+			"\t\twidth: window.innerWidth,",
+			"\t\theight: window.innerHeight,",
+			"\t}",
+			"\tconst renderer = new THREE.WebGLRenderer();",
+			"\trenderer.setSize(sizes.width, sizes.height);",
+			"\n\t// add the output of the render function to the HTML",
+			"\tdocument.body.appendChild(renderer.domElement);",
+			"\n\t// create controls for the GUI",
+			"\tconst controls = new function () {",
+			"\t\t// Add controls... ",
+			"\t\t// this.scaleX = 1;",
+			"\t};",
+			"\t// create the GUI",
+			"\tconst gui = new dat.GUI();",
+			"\t// gui.add(controls, 'scaleX', 0, 5);",
+			"\n\t// function for re-rendering/animating the scene",
+			"\tfunction tick() {",
+			"\t\trequestAnimationFrame(tick);",
+			"\t\trenderer.render(scene, camera);",
+			"\t}",
+			"\t tick();",
+			"}",
+			"init();"
+		],
+		"description": "basic init function, with a scene, camera, light, gui, renderer, and render function for THREE.js"
+	},
+
+	"Three Basic Init":{
+		"prefix": "ttbi",
+		"body": [
+			"import * as THREE from 'three';",
+			"// scene",
+			"const scene = new THREE.Scene();",
+			"// camera",
+			"const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, .1, 1000);",
+			"// renderer",
+			"const sizes = {",
+			"\t width: window.innerWidth,",
+			"\t height: window.innerHeight,",
+			"}",
+			"const renderer = new THREE.WebGLRenderer();",
+			"renderer.setSize(sizes.width, sizes.height);",
+			"renderer.setSize(window.innerWidth, window.innerHeight);",
+			"renderer.render(scene, camera);",
+			"document.body.appendChild(renderer.domElement);"
+		],
+		"description": "basic init for THREE.js a scene, camera, and renderer"
+	},
+	"Create GUI": {
+		"prefix": "tgui",
+		"body": [
+			"// create controls for the GUI",
+			"const controls = new function () {",
+			"\t // Add controls... ",
+			"\t // this.scaleX = 1;",
+			"};",
+			"// create the GUI",
+			"const gui = new dat.GUI();",
+			"// add the controls to the GUI",
+			"// gui.add(controls, 'scaleX', 0, 5);"
+		],
+		"description": "Create a gui template"
+	},
+	"Camera":{
+		"prefix": "tcam",
+		"body": "const ${2}camera = new THREE.${1|PerspectiveCamera,ArrayCamera,CubeCamera,OrthographicCamera,StereoCamera|}();",
+		"description": "camera constructor"
+	},
+	"Geometries":{
+		"prefix": "tgeo",
+		"body": "const ${2}Geometry = new THREE.${1|BoxBufferGeometry,BoxGeometry,CircleBufferGeometry,CircleGeometry,ConeBufferGeometry,ConeGeometry,CylinderBufferGeometry,CylinderGeometry,DodecahedronBufferGeometry,DodecahedronGeometry,EdgesGeometry,ExtrudeBufferGeometry,ExtrudeGeometry,IcosahedronBufferGeometry,IcosahedronGeometry,LatheBufferGeometry,LatheGeometry,OctahedronBufferGeometry,OctahedronGeometry,ParametricBufferGeometry,ParametricGeometry,PlaneBufferGeometry,PlaneGeometry,PolyhedronBufferGeometry,PolyhedronGeometry,RingBufferGeometry,RingGeometry,ShapeBufferGeometry,ShapeGeometry,SphereBufferGeometry,SphereGeometry,TetrahedronBufferGeometry,TetrahedronGeometry,TextBufferGeometry,TextGeometry,TorusBufferGeometry,TorusGeometry,TorusKnotBufferGeometry,TorusKnotGeometry,TubeBufferGeometry,TubeGeometry,WireframeGeometry|}();",
+		"description": "geometry constructor"
+	},
+	"Helpers":{
+		"prefix": "thlp",
+		"body": "const ${2}Helper = new THREE.${1|ArrowHelper,AxesHelper,BoxHelper,Box3Helper,CameraHelper,DirectionalLightHelper,FaceNormalsHelper,GridHelper,PolarGridHelper,PositionalAudioHelper,HemisphereLightHelper,PlaneHelper,PointLightHelper,RectAreaLightHelper,SkeletonHelper,SpotLightHelper,VertexNormalsHelper|}();",
+		"description": "helper constructor"
+	},
+	"Materials":{
+		"prefix": "tmat",
+		"body": "const ${1}Material = new THREE.${1|LineBasicMaterial,LineDashedMaterial,Material,MeshBasicMaterial,MeshDepthMaterial,MeshDistanceMaterial,MeshLambertMaterial,MeshMatcapMaterial,MeshNormalMaterial,MeshPhongMaterial,MeshPhysicalMaterial,MeshStandardMaterial,MeshToonMaterial,PointsMaterial,RawShaderMaterial,ShaderMaterial,ShadowMaterial,SpriteMaterial|}();",
+		"description":"material constructor"
+	},
+	"Lights":{
+		"prefix": "tlig",
+		"body": "const ${2}Light = new THREE.${1|AmbientLight,DirectionalLight,HemisphereLight,Light,PointLight,RectAreaLight,SpotLight|}();",
+		"description": "light constructor"
+	},
+	"Lights/Shadows":{
+		"prefix": "tls",
+		"body": "const ${2}Shadow = new THREE.${1|DirectionalLightShadow,LightShadow,SpotLightShadow|}();",
+		"description": "lights/shadows constructor"
+	},
+
+	"Loaders":{
+		"prefix": "tloader",
+		"body": "const ${2}Loader = new THREE.${1|AnimationLoader,AudioLoader,BufferGeometryLoader,Cache,CompressedTextureLoader,CubeTextureLoader,DataTextureLoader,FileLoader,FontLoader,ImageBitmapLoader,ImageLoader,Loader,LoaderUtils,MaterialLoader,ObjectLoader,TextureLoader|}();",
+		"description": "loaders constructor"
+	},
+	"Load Resource": {
+		"prefix": "tload",
+		"body": [
+			"const ${1:resource} = loader.load(\"${2:resource_url}\",",
+				"\t// onLoad callback",
+				"\tfunction onLoad($1) {",
+					"\t\t// do something with $1",
+					"\t\t// scene.add($1);",
+				"\t},",
+				"\t// (optional) onProgress callback",
+				"\t// function onProgress() {",
+					"\t\t// do something",
+				"\t// },",
+				"\t// onError callback",
+				"\tfunction onError(err) {",
+					"\t\tconsole.log('An error happened');",
+				"\t}",
+			");"
+		],
+		"description": "load in a resource"
+	},
+	"Load Function": {
+		"prefix": "tloadfunc",
+		"body": [
+			"const ${1:loader} = new THREE.${1|AnimationLoader,AudioLoader,BufferGeometryLoader,Cache,CompressedTextureLoader,CubeTextureLoader,DataTextureLoader,FileLoader,FontLoader,ImageBitmapLoader,ImageLoader,Loader,LoaderUtils,MaterialLoader,ObjectLoader,TextureLoader|}();",
+			"const ${2:resource} = ${1}.load(\"${3:resource_url}\",",
+				"\t// onLoad callback",
+				"\tfunction onLoad($2) {",
+					"\t\t//do something with $2",
+					"\t\t//scene.add($2);",
+				"\t},",
+				"\t//(optional) onProgress callback",
+				"\t//function onProgress() {",
+					"\t\t// do something",
+				"\t// },",
+				"\t// onError callback",
+				"\tfunction onError(err) {",
+					"\t\tconsole.log('An error happened');",
+				"\t}",
+			");"
+		],
+		"description": "Creates a loader and then loads in a resource"
+	},
+	"Create Text": {
+		"prefix": "ttext",
+		"body": [
+			"const textLoader = new THREE.FontLoader();",
+			"const ${2:font} = textLoader.load(\"${3:resource_url}\",",
+				"\t// onLoad callback",
+				"\t function onLoad($2) {",
+					"\t\tconst textGeometry = new THREE.TextGeometry(\"${4:My Text}\", {",
+						"\t\t\tfont: $2,",
+						"\t\t\tsize: 12,",
+						"\t\t\theight: 5,",
+						"\t\t\tcurveSegments: 12,",
+						"\t\t\tbevelThickness: 1,",
+						"\t\t\tbevelSize: 2,",
+						"\t\t\tbevelEnabled: true,",
+					"\t\t});",
+					"\t\tconst textMaterial = new THREE.MeshPhongMaterial({",
+						"\t\t\tcolor: 0xff0000, flatShading:true",
+					"\t\t});",
+					"\t\tconst textMesh = new THREE.Mesh(textGeometry, textMaterial);",
+					"\t\ttextMesh.position.set(0, 0, 0);",
+					"\t\tscene.add(textMesh);",
+				"\t},",
+				"\t// onProgress callback",
+				"\tfunction onProgress() {",
+					"\t\t// do something",
+				"\t},",
+				"\t// onError callback",
+				"\tfunction onError(err) {",
+					"\t\tconsole.log('An error happened');",
+				"\t}",
+			");"
+		],
+		"description": "Creates a basic 3D text object"
+	},
+	"Renderer":{
+		"prefix": "tren",
+		"body": "const ${2:renderer} = ${1|THREE.WebGLMultisampleRenderTarget,THREE.WebGLRenderer,THREE.WebGLRenderTarget,THREE.WebGLRenderTargetCube|}()",
+		"description": "renderer constructor"
+	},
+	"Fog":{
+		"prefix": "tfog",
+		"body": "const fog = ${1|THREE.Fog(color\\, near\\, far),THREE.FogExp2(color\\, density)|}",
+		"description": "fog constructor"
+	},
+	"Textures":{
+		"prefix": "ttexture",
+		"body": "const texture = ${1|THREE.CanvasTexture,THREE.CompressedTexture,THREE.CubeTexture,THREE.DataTexture,THREE.DataTexture3D,THREE.DepthTexture,THREE.Texture,THREE.VideoTexture|}",
+		"description": "texture constructor"
+	},
+	"Resize": {
+		"prefix": "tresize",
+		"body":
+		[
+			"window.addEventListener('resize', onResize, false);",
+			"function onResize() {",
+			"\tcamera.aspect = window.innerWidth / window.innerHeight;",
+			"\tcamera.updateProjectionMatrix();",
+			"\trenderer.setSize(window.innerWidth, window.innerHeight);",
+			"}"
+		],
+		"description": "Automatically resize the canvas to the size of the window"
+	},
+	"Create Mesh/Shape" : {
+		"prefix": "tmesh",
+		"body":
+		[
+			"const ${1:material} = new THREE.${2|MeshBasicMaterial, LineBasicMaterial,LineDashedMaterial,Material,MeshDepthMaterial,MeshDistanceMaterial,MeshLambertMaterial,MeshMatcapMaterial,MeshNormalMaterial,MeshPhongMaterial,MeshPhysicalMaterial,MeshStandardMaterial,MeshToonMaterial,PointsMaterial,RawShaderMaterial,ShaderMaterial,ShadowMaterial,SpriteMaterial|}",
+			"\nconst ${3:$1Mesh} = new THREE.Mesh(",
+			"\tnew THREE.${4|BoxGeometry,CircleGeometry,ConeGeometry,CylinderGeometry,DodecahedronGeometry,EdgesGeometry,ExtrudeGeometry,IcosahedronGeometry,LatheGeometry,OctahedronGeometry,ParametricGeometry,PlaneGeometry,PolyhedronGeometry,RingGeometry,ShapeGeometry,SphereGeometry,TetrahedronGeometry,TextGeometry,TorusGeometry,TorusKnotGeometry,TubeGeometry,WireframeGeometry|},",
+			"\t$1",
+			")" 
+		],
+		"description": "Add a shape/mesh to a scene"
+	},
+	"Create Buffer Mesh/Shape" : {
+		"prefix": "tbufmesh",
+		"body":
+		[
+			"const ${1:material} = new THREE.${2|MeshBasicMaterial,LineBasicMaterial,LineDashedMaterial,Material,MeshDepthMaterial,MeshDistanceMaterial,MeshLambertMaterial,MeshMatcapMaterial,MeshNormalMaterial,MeshPhongMaterial,MeshPhysicalMaterial,MeshStandardMaterial,MeshToonMaterial,PointsMaterial,RawShaderMaterial,ShaderMaterial,ShadowMaterial,SpriteMaterial|}",
+			"\nconst ${3:$1Mesh} = new THREE.Mesh(",
+			"\tnew THREE.${4|BoxBufferGeometry,CircleBufferGeometry,ConeBufferGeometry,CylinderBufferGeometry,DodecahedronBufferGeometry,ExtrudeBufferGeometry,IcosahedronBufferGeometry,LatheBufferGeometry,OctahedronBufferGeometry,ParametricBufferGeometry,ParametricGeometry,PlaneBufferGeometry,PolyhedronBufferGeometry,RingBufferGeometry,ShapeBufferGeometry,SphereBufferGeometry,TetrahedronBufferGeometry,TextBufferGeometry,TorusBufferGeometry,TorusKnotBufferGeometry,TubeBufferGeometry|}",
+			"\t$1",
+			")"
+		],
+		"description": "Add a buffered shape/mesh to a scene"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"name": "next-react-es7-snippets",
+	"displayName": "Next React/ES7+/React-Native snippets",
+	"description": "This extension contain snippets for Nextjs, React, React-Native, Redux in JS/TS with ES7+ syntax and Tailwind",
+	"version": "0.0.1",
+	"publisher": "YanesNicolas",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.88.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yanesnicolas/next-react-tailwind-snippets"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "07391655-9f90-43d7-8d5a-53e74fe45b62",
+		"publisherId": "0314a515-e2db-43e4-a151-53cc5f59a3a4",
+		"publisherDisplayName": "Yanes Nicolas",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1725200125269,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 78748
+	}
+}

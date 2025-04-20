@@ -1,0 +1,1149 @@
+{
+  //Next Components
+  "nextFunctionalComponent": {
+    "prefix": "nfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export default function ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}() {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a Next Functional Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextFunctionalExportComponent": {
+    "prefix": "nfce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "function ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}() {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next Functional Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "sonnyNextReactFunctionalExportComponent": {
+    "prefix": "nssfc",
+    "body": [
+      "function ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}() {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next Sonny Sangha React Functional Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextFunctionalComponentWithPropTypes": {
+    "prefix": "nfcp",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "function ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}(props) {",
+      "  return (",
+      "    <div>${1:Content}</div>",
+      "  )",
+      "}",
+      "",
+      "${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}.propTypes = {}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}",
+      ""
+    ],
+    "description": "Creates a Next Functional Component with ES7 module system with PropTypes",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextArrowFunctionExportComponent": {
+    "prefix": "nafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} = () => {",
+      "  return (",
+      "    <div>${1:Content}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next Arrow Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextArrowFunctionComponent": {
+    "prefix": "nafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} = () => {",
+      "  return (",
+      "    <div>${1:Content}</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a Next Arrow Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextArrowFunctionComponentWithPropTypes": {
+    "prefix": "nafcp",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "const ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} = props => {",
+      "  return (",
+      "    <div>${1:Content}</div>",
+      "  )",
+      "}",
+      "",
+      "${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}.propTypes = {}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next Arrow Function Component with ES7 module system with PropTypes",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextReactFunctionMemoComponent": {
+    "prefix": "nmc",
+    "body": [
+      "import React, { memo } from 'react'",
+      "",
+      "const ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} = memo(() => {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "})",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next React Memo Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextReactFunctionMemoComponentWithPropTypes": {
+    "prefix": "nmcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { memo } from 'react'",
+      "",
+      "const ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} = memo((props) => {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "})",
+      "",
+      "${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}.propTypes = {}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next React Memo Function Component with ES7 module system with PropTypes",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+
+  // Next typescript components
+  "nextTypescriptReactClassComponent": {
+    "prefix": "ntsrcc",
+    "description": "Creates a Next React component class with ES7 module system and TypeScript interfaces",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "export default class ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:Hello World}</div>",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactClassExportComponent": {
+    "prefix": "ntsrce",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "class ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:Hello World}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a  Next React component class with ES7 module system and TypeScript interfaces",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactFunctionalExportComponent": {
+    "prefix": "ntsrfce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "function ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}({}: Props) {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next React Functional Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactFunctionalComponent": {
+    "prefix": "ntsrfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "export default function ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}({}: Props) {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a Next React Functional Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactArrowFunctionExportComponent": {
+    "prefix": "ntsrafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} = (props: Props) => {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next React Arrow Function Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactArrowFunctionComponent": {
+    "prefix": "ntsrafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} = (props: Props) => {",
+      "  return (",
+      "    <div>${1:Hello World}</div>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a Next React Arrow Function Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactClassPureComponent": {
+    "prefix": "ntsrpc",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "export default class ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} extends PureComponent<Props> {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:Hello World}</div>",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "description": "Creates a Next React pure component class with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactClassExportPureComponent": {
+    "prefix": "ntsrpce",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "class ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} extends PureComponent<Props> {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:Hello World}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/}"
+    ],
+    "description": "Creates a Next React pure component class with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "nextTypescriptReactClassComponentRedux": {
+    "prefix": "ntsrcredux",
+    "body": [
+      "import { connect } from 'react-redux'",
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "export class ${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:Hello World}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${TM_DIRECTORY/.*[\\\\\\/](.*)/${1:/pascalcase}/})"
+    ],
+    "description": "Creates a Next React component class with connected redux and ES7 module system and TypeScript interfaces",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+ 
+  //console
+  "consoleAssert": {
+    "prefix": "cas",
+    "body": ["console.assert(${1:first}, ${2:second})"],
+    "description": "If the specified expression is false, the message is written to the console along with a stack trace",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleClear": {
+    "prefix": "ccl",
+    "body": ["console.clear()"],
+    "description": "Clears the console",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleCount": {
+    "prefix": "cco",
+    "body": ["console.count(${1:first})"],
+    "description": "Writes the the number of times that count() has been invoked at the same line and with the same label",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleDir": {
+    "prefix": "cdi",
+    "body": ["console.dir(${1:first})"],
+    "description": "Prints a JavaScript representation of the specified object",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleError": {
+    "prefix": "cer",
+    "body": ["console.error(${1:first})"],
+    "description": "Displays a message in the console and also includes a stack trace from where the method was called",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleGroup": {
+    "prefix": "cgr",
+    "body": ["console.group('${1:first}')"],
+    "description": "Groups and indents all following output by an additional level, until console.groupEnd() is called.",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleGroupEnd": {
+    "prefix": "cge",
+    "body": ["console.groupEnd()"],
+    "description": "Closes out the corresponding console.group().",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleLog": {
+    "prefix": "clg",
+    "body": ["console.log(${1:first})"],
+    "description": "Displays a message in the console",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleTrace": {
+    "prefix": "ctr",
+    "body": ["console.trace(${1:first})"],
+    "description": "Prints a stack trace from the point where the method was called",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleLogObject": {
+    "prefix": "clo",
+    "body": ["console.log('${1:first}', ${1:first})"],
+    "description": "Logs property with name.",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleLogJson": {
+    "prefix": "clj",
+    "body": ["console.log('${1:first}', JSON.stringify(${1:first}, null, 2))"],
+    "description": "Logs stringified JSON property with name.",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleTime": {
+    "prefix": "ctm",
+    "body": ["console.time('${1:first}')"],
+    "description": "Console time wrapper",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleTimeEnd": {
+    "prefix": "cte",
+    "body": ["console.timeEnd('${1:first}')"],
+    "description": "Console time end wrapper",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleWarn": {
+    "prefix": "cwa",
+    "body": ["console.warn(${1:first})"],
+    "description": "Displays a message in the console but also displays a yellow warning icon along with the logged message",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleInfo": {
+    "prefix": "cin",
+    "body": ["console.info(${1:first})"],
+    "description": "Displays a message in the console but also displays a blue information icon along with the logged message",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "consoleTable": {
+    "prefix": "ctl",
+    "body": ["console.table([${1:first}])"],
+    "description": "Logs table to console",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+
+  //React Component
+  "exportType": {
+    "body": ["export type ${1:first} = {${2:second}}"],
+    "prefix": "exptp",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "exportInterface": {
+    "prefix": "expint",
+    "body": ["export interface ${1:first} {${2:second}}"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactClassComponent": {
+    "prefix": "tsrcc",
+    "description": "Creates a React component class with ES7 module system and TypeScript interfaces",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "export default class ${1:${TM_FILENAME_BASE}} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactClassExportComponent": {
+    "prefix": "tsrce",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React component class with ES7 module system and TypeScript interfaces",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactFunctionalExportComponent": {
+    "prefix": "tsrfce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}({}: Props) {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Functional Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactFunctionalComponent": {
+    "prefix": "tsrfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}({}: Props) {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a React Functional Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactArrowFunctionExportComponent": {
+    "prefix": "tsrafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = (props: Props) => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactArrowFunctionComponent": {
+    "prefix": "tsrafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = (props: Props) => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactClassPureComponent": {
+    "prefix": "tsrpc",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "export default class ${1:${TM_FILENAME_BASE}} extends PureComponent<Props> {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "description": "Creates a React pure component class with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactClassExportPureComponent": {
+    "prefix": "tsrpce",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends PureComponent<Props> {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React pure component class with ES7 module system and TypeScript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactClassComponentRedux": {
+    "prefix": "tsrcredux",
+    "body": [
+      "import { connect } from 'react-redux'",
+      "import React, { Component } from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "type State = {}",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component<Props, State> {",
+      "  state = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}})"
+    ],
+    "description": "Creates a React component class with connected redux and ES7 module system and TypeScript interfaces",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactNativeArrowFunctionComponent": {
+    "prefix": "tsrnf",
+    "body": [
+      "import { View, Text } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = (props: Props) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Native Arrow Function Component with ES7 module system in TypeScript",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "typescriptReactNativeArrowFunctionComponentWithStyles": {
+    "prefix": "tsrnfs",
+    "body": [
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "import React from 'react'",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = (props: Props) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      "",
+      "const styles = StyleSheet.create({})"
+    ],
+    "description": "Creates a React Native Arrow Function Component with ES7 module system, TypeScript interface and StyleSheet",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactArrowFunctionComponent": {
+    "prefix": "rafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactArrowFunctionComponentWithPropTypes": {
+    "prefix": "rafcp",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = props => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system with PropTypes",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactArrowFunctionExportComponent": {
+    "prefix": "rafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassComponent": {
+    "prefix": "rcc",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export default class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Creates a React component class with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassComponentPropTypes": {
+    "prefix": "rccp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { Component } from 'react'",
+      "",
+      "export default class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "  static propTypes = {${2:second}: ${3:third}}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Creates a React component class with PropTypes and ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassComponentRedux": {
+    "prefix": "rcredux",
+    "body": [
+      "import React, { Component } from 'react'",
+      "import { connect } from 'react-redux'",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}})"
+    ],
+    "description": "Creates a React component class with connected redux and ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassComponentReduxPropTypes": {
+    "prefix": "rcreduxp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { Component } from 'react'",
+      "import { connect } from 'react-redux'",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "  static propTypes = {",
+      "    ${2:second}: ${3:third}",
+      "  }",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}})"
+    ],
+    "description": "Creates a React component class with PropTypes with connected redux and ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassExportComponent": {
+    "prefix": "rce",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React component class with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassExportComponentWithPropTypes": {
+    "prefix": "rcep",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { Component } from 'react'",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "  static propTypes = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React component class with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassExportPureComponent": {
+    "prefix": "rpce",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React pure component class with ES7 module system export",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassPureComponent": {
+    "prefix": "rpc",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "",
+      "export default class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Creates a React pure component class with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactClassPureComponentWithPropTypes": {
+    "prefix": "rpcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { PureComponent } from 'react'",
+      "",
+      "export default class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "  static propTypes = {}",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>${1:first}</div>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Creates a React component class with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactFunctionMemoComponent": {
+    "prefix": "rmc",
+    "body": [
+      "import React, { memo } from 'react'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = memo(() => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "})",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Memo Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactFunctionMemoComponentWithPropTypes": {
+    "prefix": "rmcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React, { memo } from 'react'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = memo((props) => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "})",
+      "",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Memo Function Component with ES7 module system with PropTypes",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactFunctionalComponent": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Functional Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactFunctionalComponentRedux": {
+    "prefix": "rfcredux",
+    "body": [
+      "import React from 'react'",
+      "import { connect } from 'react-redux'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = (props) => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}})"
+    ],
+    "description": "Creates a React functional component with connected redux and ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactFunctionalComponentReduxPropTypes": {
+    "prefix": "rfcreduxp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import React from 'react'",
+      "import { connect } from 'react-redux'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = (props) => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {",
+      "  ${2:second}: PropTypes.${3:third}",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({})",
+      "",
+      "const mapDispatchToProps = {}",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}})"
+    ],
+    "description": "DEPRECATED: Creates a React functional component with PropTypes with connected redux and ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactFunctionalComponentWithPropTypes": {
+    "prefix": "rfcp",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}(props) {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "Creates a React Functional Component with ES7 module system with PropTypes",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "reactFunctionalExportComponent": {
+    "prefix": "rfce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Functional Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "sonnyReactFunctionalExportComponent": {
+    "prefix": "ssfc",
+    "body": [
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a Sonny Sangha React Functional Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+
+  //Hooks
+  "useCallback": {
+    "prefix": "useCallbackSnippet",
+    "body": [
+      "useCallback(",
+      "  () => {",
+      "    ${1:first}",
+      "  },",
+      "  [${2:second}],",
+      ")",
+      ""
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useContext": {
+    "prefix": "useContextSnippet",
+    "body": ["const ${1:first} = useContext(${2:second})"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useEffect": {
+    "prefix": "useEffectSnippet",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:first}",
+      "",
+      "  return () => {",
+      "    ${2:second}",
+      "  }",
+      "}, [${3:third}])",
+      ""
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useImperativeHandle": {
+    "prefix": "useImperativeHandleSnippet",
+    "body": [
+      "useImperativeHandle(",
+      "  ${1:first},",
+      "  () => {",
+      "    ${2:second}",
+      "  },",
+      "  [${3:third}],",
+      ")"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useLayoutEffect": {
+    "prefix": "useLayoutEffectSnippet",
+    "body": [
+      "useLayoutEffect(() => {",
+      "  ${1:first}",
+      "",
+      "  return () => {",
+      "    ${2:second}",
+      "  };",
+      "}, [${3:third}])"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useMemo": {
+    "prefix": "useMemoSnippet",
+    "body": ["useMemo(() => ${1:first}, [${2:second}])"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useReducer": {
+    "prefix": "useReducerSnippet",
+    "body": [
+      "const [state, dispatch] = useReducer(${1:first}, ${2:second}, ${3:third})"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useRef": {
+    "prefix": "useRefSnippet",
+    "body": ["const ${1:first} = useRef(${2:second})"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useState": {
+    "prefix": "useStateSnippet",
+    "body": [
+      "const [${1:first}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:second})"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "useOptimistic": {
+    "prefix": "useOptimisticSnippet",
+    "body": [
+      "const [optimistic${1:first}, addOptimistic${1/(.*)/${1:/capitalize}/}] = useOptimistic(",
+      " state,",
+      "// updateFn",
+      "(currentState, optimisticValue) => {",
+      "// merge and return new state",
+      "// with optimistic value",
+      "}",
+      ");"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  }
+}
+ 

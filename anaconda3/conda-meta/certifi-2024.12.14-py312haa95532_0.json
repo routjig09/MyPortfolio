@@ -1,0 +1,49 @@
+{
+  "build": "py312haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.12,<3.13.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\hp\\anaconda3\\pkgs\\certifi-2024.12.14-py312haa95532_0",
+  "files": [
+    "Lib/site-packages/certifi-2024.12.14.dist-info/INSTALLER",
+    "Lib/site-packages/certifi-2024.12.14.dist-info/LICENSE",
+    "Lib/site-packages/certifi-2024.12.14.dist-info/METADATA",
+    "Lib/site-packages/certifi-2024.12.14.dist-info/RECORD",
+    "Lib/site-packages/certifi-2024.12.14.dist-info/REQUESTED",
+    "Lib/site-packages/certifi-2024.12.14.dist-info/WHEEL",
+    "Lib/site-packages/certifi-2024.12.14.dist-info/direct_url.json",
+    "Lib/site-packages/certifi-2024.12.14.dist-info/top_level.txt",
+    "Lib/site-packages/certifi/__init__.py",
+    "Lib/site-packages/certifi/__main__.py",
+    "Lib/site-packages/certifi/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/certifi/__pycache__/__main__.cpython-312.pyc",
+    "Lib/site-packages/certifi/__pycache__/core.cpython-312.pyc",
+    "Lib/site-packages/certifi/cacert.pem",
+    "Lib/site-packages/certifi/core.py",
+    "Lib/site-packages/certifi/py.typed",
+    ".nonadmin"
+  ],
+  "fn": "certifi-2024.12.14-py312haa95532_0.conda",
+  "license": "MPL-2.0",
+  "link": {
+    "source": "C:\\Users\\hp\\anaconda3\\pkgs\\certifi-2024.12.14-py312haa95532_0",
+    "type": 1
+  },
+  "md5": "43062d7db3d0b74169d50889920bb059",
+  "name": "certifi",
+  "package_tarball_full_path": "C:\\Users\\hp\\anaconda3\\pkgs\\certifi-2024.12.14-py312haa95532_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "31af5b091eb96feebced117b5c5ac4d28efc4968266ed8cd9fc08472e6796acb",
+  "size": 166273,
+  "subdir": "win-64",
+  "timestamp": 1734473423000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/certifi-2024.12.14-py312haa95532_0.conda",
+  "version": "2024.12.14"
+}

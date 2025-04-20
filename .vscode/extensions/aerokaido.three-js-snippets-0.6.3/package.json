@@ -1,0 +1,68 @@
+{
+	"name": "three-js-snippets",
+	"displayName": "Three.JS Snippets",
+	"description": "Common Three.JS snippets to speed up your Three.js workflow",
+	"version": "0.6.3",
+	"author": {
+		"name": "Alexander Rose",
+		"email": "acrosemail@gmail.com"
+	},
+	"publisher": "aerokaido",
+	"engines": {
+		"vscode": "^1.58.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"three.js",
+		"threejs",
+		"ThreeJS",
+		"Three.JS",
+		"snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippetsReact.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippetsReact.json"
+			}
+		]
+	},
+	"license": "MIT",
+	"galleryBanner": {
+		"color": "##705df2",
+		"theme": "light"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/acrose99/Three-JS-Snippets.git"
+	},
+	"icon": "logo.png",
+	"__metadata": {
+		"id": "ac25afbf-27b9-4587-a49e-0c95f06181dd",
+		"publisherId": "16e441a9-29b8-4001-99ec-dc1781006e44",
+		"publisherDisplayName": "aerokaido",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1729857490068,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 39306
+	}
+}

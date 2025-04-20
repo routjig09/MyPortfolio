@@ -1,0 +1,53 @@
+{
+  "build": "py312haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "aext-shared 4.1.0",
+    "jupyterlab >=3,<5",
+    "jupyterlab_server >=2.27.0,<3",
+    "notebook >=7.0.6,<8",
+    "python >=3.12,<3.13.0a0",
+    "tornado"
+  ],
+  "extracted_package_dir": "C:\\Users\\hp\\anaconda3\\pkgs\\aext-core-server-4.1.0-py312haa95532_0",
+  "files": [
+    "Lib/site-packages/aext_core_server-4.1.0.dist-info/INSTALLER",
+    "Lib/site-packages/aext_core_server-4.1.0.dist-info/METADATA",
+    "Lib/site-packages/aext_core_server-4.1.0.dist-info/RECORD",
+    "Lib/site-packages/aext_core_server-4.1.0.dist-info/REQUESTED",
+    "Lib/site-packages/aext_core_server-4.1.0.dist-info/WHEEL",
+    "Lib/site-packages/aext_core_server-4.1.0.dist-info/direct_url.json",
+    "Lib/site-packages/aext_core_server-4.1.0.dist-info/licenses/LICENSE",
+    "Lib/site-packages/aext_core_server/__about__.py",
+    "Lib/site-packages/aext_core_server/__init__.py",
+    "Lib/site-packages/aext_core_server/__pycache__/__about__.cpython-312.pyc",
+    "Lib/site-packages/aext_core_server/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/aext_core_server/__pycache__/handlers.cpython-312.pyc",
+    "Lib/site-packages/aext_core_server/__pycache__/logger.cpython-312.pyc",
+    "Lib/site-packages/aext_core_server/handlers.py",
+    "Lib/site-packages/aext_core_server/logger.py",
+    ".nonadmin"
+  ],
+  "fn": "aext-core-server-4.1.0-py312haa95532_0.conda",
+  "license": "LicenseRef-Proprietary",
+  "link": {
+    "source": "C:\\Users\\hp\\anaconda3\\pkgs\\aext-core-server-4.1.0-py312haa95532_0",
+    "type": 1
+  },
+  "md5": "91375e16dbb2af5efd2459e0e08010fe",
+  "name": "aext-core-server",
+  "package_tarball_full_path": "C:\\Users\\hp\\anaconda3\\pkgs\\aext-core-server-4.1.0-py312haa95532_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "afd2625a289cc70dcdbadd82732f4b0ecf9e6b0e310e2c0b42de59e8b275b0dd",
+  "size": 13464,
+  "subdir": "win-64",
+  "timestamp": 1734635210000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/aext-core-server-4.1.0-py312haa95532_0.conda",
+  "version": "4.1.0"
+}
